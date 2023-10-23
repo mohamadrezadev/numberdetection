@@ -32,7 +32,7 @@ def getpic(filename):
         rectangles = [cv2.boundingRect(c) for c in contours]
         sorted_rectangles = sorted(rectangles, key=lambda r: r[2]*r[3], reverse=True)
         # max_rect = max(rectangles, key=lambda r: r[2]*r[3])
-        sorted_rectangles = sorted(rectangles, key=lambda r: r[2]*r[3], reverse=True)
+        # sorted_rectangles = sorted(rectangles, key=lambda r: r[2]*r[3], reverse=True)
         max_rects = sorted_rectangles[:2]
         img_address=[]
         for i, rect in enumerate(max_rects):
